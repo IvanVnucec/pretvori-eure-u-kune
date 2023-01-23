@@ -2,14 +2,16 @@
 <html lang="hr">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euri u Kune</title>
 </head>
 
 <body>
-    <h1>Pretvori Eure u Kune</h1>
+    <h1 style="text-align: center;">Pretvori Eure u Kune</h1>
 
-    <div>
+    <div style="max-width: 300px; margin: auto;">
         <h2>Unos:</h2>
         <form>
             <label for="input">Euro:</label>
@@ -21,9 +23,7 @@
             <input type="checkbox" id="rounding" checked onclick="updatePrice()">
             <label for="rounding">Zaokruživanje</label>
         </form>
-    </div>
 
-    <div>
         <h2>Rezultat:</h2>
         <label for="output">HRK:</label>
         <output id="output">0.00</output>
