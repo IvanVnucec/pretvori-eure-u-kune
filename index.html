@@ -9,6 +9,21 @@
     <title>Euri u Kune</title>
 </head>
 
+<style>
+    /* remove input increment/decrement arrows  on Chrome, Edge, Safari, and... */
+    input#input::-webkit-outer-spin-button,
+    input#input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* ...also on Firefox. */
+    input[type=number]#input {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+</style>
+
 <body>
     <h1 style="text-align: center;">Pretvori Eure u Kune</h1>
     <div style="max-width: 280px; margin: auto; text-align: center; font-style: italic;">
