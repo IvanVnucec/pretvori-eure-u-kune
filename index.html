@@ -24,7 +24,7 @@
     }
 </style>
 
-<body>
+<body onload="updatePrice();">
     <h1 style="text-align: center;">Pretvori Eure u Kune</h1>
     <div style="max-width: 280px; margin: auto; text-align: center; font-style: italic;">
         Pretvori Eure u Kune po fiksnom tečaju konverzije Vijeća Europske unije.<br>
@@ -33,7 +33,7 @@
 
     <div style="max-width: 300px; margin: auto;">
         <h2>Unos:</h2>
-        <form onsubmit="return false">
+        <form onsubmit="updatePrice(); return false;">
             <label for="input">Euro:</label>
             <input type="number" id="input" name="euro" step="0.01" placeholder="0.00" size="18" required autofocus
                 oninput="updatePrice()">
