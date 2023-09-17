@@ -64,7 +64,7 @@
 
     <script>
         function updatePrice() {
-            var euros = document.getElementById("input").value;
+            var euros = document.getElementById("input").value.trim();
             var kunas = euros * 7.53450;
 
             var is_rounding = document.getElementById("rounding");
